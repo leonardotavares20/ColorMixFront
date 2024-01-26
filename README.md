@@ -47,13 +47,13 @@ Para utilizar esse projeto via docker você precisa ter o docker instalado e tam
 
 -  Este projeto utiliza docker na versão 24.0.7
 -  Você pode clonar o repositorio com: 'git clone "url do repositorio"'
--  Após clonar o repositorio, utilize o comando "cd ./Front-Santa-Rita no terminal" para mudar o diretorio para o do projeto,
+-  Após clonar o repositorio, utilize o comando "cd ./ColorMixFront no terminal" para mudar o diretorio para o do projeto,
 -  Depois inicie o docker em sua maquina
--  Após iniciar o docker, digite no terminal(pode ser do vscode ou terminal do sistema) o comando: "docker build -t front-santa-rita ." esse comando faz a construção do container do projeto na sua maquina,
--  E inicie o projeto com o comando: "docker run --name front-santa-rita -it --rm -p 3000:3000 front-santa-rita",
+-  Após iniciar o docker, digite no terminal(pode ser do vscode ou terminal do sistema) o comando: "docker build -t color-mix ." esse comando faz a construção do container do projeto na sua maquina,
+-  E inicie o projeto com o comando: "docker run --name color-mix -it --rm -p 3000:3000 color-mix",
 -  Após isso acesse o projeto na url do seu navegador digitando na barra superior: localhost:3000, após seguir esses passos o projeto vai iniciar no seu navegador
-- Para parar a execução digite o comando: 'docker stop front-santa-rita'
-- Para reiniciar a execução do container digite: 'docker start front-santa-rita'
+- Para parar a execução digite o comando: 'docker stop color-mix'
+- Para reiniciar a execução do container digite: 'docker start color-mix'
 
 ## Dependencies
 
@@ -76,7 +76,7 @@ Para utilizar esse projeto via docker você precisa ter o docker instalado e tam
  Se você for utilizar esse projeto no modo de desenvolvimento, você vai precisar ter o node e o git instalado na sua maquina
  
 - Clone o projeto com "git clone 'url do projeto'" no terminal(vscode ou terminal do seu sistema)
-- Troque o atual para o do projeto com cd ./Front-Santa-Rita 
+- Troque o atual para o do projeto com cd ./ColorMixFront
 - Instale as dependências com "npm install"
 - Rode o projeto com "npm run dev"
 - Abra o projeto no seu navegador digitando na barra superior a url: localhost:5173
