@@ -1,12 +1,8 @@
 ## Descriçao do Projeto
 
-<h1>Santa Rita Home Center</h1>
+<!-- <h1>Santa Rita Home Center</h1>
 
 <h2>É uma plataforma online para explorar os produtos da loja Santa Rita. Aqui estão algumas informações úteis para começar:</h2> 
- 
-<!-- <h3>Link do Projeto</h3>
-
- - Você pode visitar o site clicando <a href="#" target="_blank">aqui!</a> -->
 
 ![Alt Text](./public/home.png)
 
@@ -43,7 +39,7 @@
 
 - Sinta-se à vontade para contribuir para a melhoria do Santa Rita Home Center. Se encontrar bugs ou tiver sugestões, por favor, abra uma issue no GitHub.
 - Clone o repositório, faça as alterações necessárias e envie um pull request.
-- Abaixo você tem mais informações sobre como contribuir com o projeto
+- Abaixo você tem mais informações sobre como contribuir com o projeto -->
 
 ## Instruções para utilizar o projeto via docker
 
