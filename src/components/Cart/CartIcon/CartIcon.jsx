@@ -29,8 +29,8 @@ const CartIcon = () => {
               )}
             </button>
           </Link>
-          {hamburgerMenu && <Menu />}
         </div>
+        {hamburgerMenu && <Menu />}
       </DivCartItem>
     </>
   );

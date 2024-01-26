@@ -1,7 +1,8 @@
 import React from "react";
 import { Menu } from "./style";
 import { Link } from "react-router-dom";
-import { Instagram, Facebook } from "../../../data/SocialMedia";
+import Instagram from "../../../../assets/instagramMobile.svg";
+import Facebook from "../../../../assets/facebookMobile.svg";
 
 const MenuMobile = ({ open }) => {
   return (
@@ -15,11 +16,11 @@ const MenuMobile = ({ open }) => {
           </menu>
         </div>
         <div className="socials">
-          <a href={Instagram.link} target="_blank">
-            <img src={Instagram.img} alt={Instagram.alt} />
+          <a hre="#" target="_blank">
+            <img src={Instagram} alt="Instagram Color Mix" />
           </a>
-          <a className="facebook" href={Facebook.link} target="_blank">
-            <img src={Facebook.img} alt={Facebook.alt} />
+          <a className="facebook" href="#" target="_blank">
+            <img src={Facebook} alt="Facebook Color Mix" />
           </a>
         </div>
       </div>

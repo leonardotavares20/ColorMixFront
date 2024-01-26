@@ -5,7 +5,7 @@ export const Menu = styled.nav`
   align-items: center;
   justify-items: center;
   width: 50vw;
-  background: #136c35;
+  background: #243982;
   height: 100vh;
   position: absolute;
   top: 0;

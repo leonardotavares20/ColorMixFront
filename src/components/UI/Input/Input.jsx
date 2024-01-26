@@ -5,6 +5,7 @@ export const Input = styled.input`
   border-radius: 20px 0px 0px 20px;
   border: 1.2px solid #243982;
   min-width: 200px;
+  padding-left: 10px;
   z-index: 1;
   transform: translateX(5px);
 

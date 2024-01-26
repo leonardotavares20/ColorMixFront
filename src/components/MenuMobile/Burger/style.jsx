@@ -16,7 +16,7 @@ export const StyledBurger = styled.button`
   .div {
     width: 2rem;
     height: 0.35rem;
-    background: ${({ open }) => (open ? "#2a866c" : "#1C7045")};
+    background: ${({ open }) => (open ? "#243982" : "#243982")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -42,13 +42,13 @@ export const StyledBurger = styled.button`
 
   @media screen and (max-width: 1024px) {
     .div {
-      background: ${({ open }) => (open ? "#ffffff" : "#1C7045")};
+      background: ${({ open }) => (open ? "#ffffff" : "#243982")};
     }
   }
 
   @media screen and (max-width: 820px) {
     .div {
-      background: white;
+      background: ${({ open }) => (open ? "#ffffff" : "#243982")};
     }
   }
 

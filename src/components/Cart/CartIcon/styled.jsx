@@ -6,13 +6,12 @@ export const DivCartItem = styled.div`
   padding: 0px 10px;
   grid-area: cart;
   gap: 20px;
-  width: 40%;
+  width: 100%;
   height: 100%;
   justify-items: start;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1.5fr 1fr;
-    justify-items: center;
   }
 
   @media screen and (max-width: 820px) {
