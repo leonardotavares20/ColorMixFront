@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const ContainerBanner = styled.section`
-  margin-bottom: 20px;
   max-height: 500px;
 
   img {
     width: 100%;
-    max-height: 450px;
     display: flex;
     object-fit: contain;
   }
 
+  .swiper-pagination-bullet {
+    background-color: #243982;
+    width: 10px;
+    height: 10px; 
+  }
+
   .mySwiper {
-    width: 95%;
-    margin-top: 30px;
+    width: 100%;
     object-fit: cover;
   }
 

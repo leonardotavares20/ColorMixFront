@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation } from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,7 +28,6 @@ const Banner = (props) => {
         <Swiper
           spaceBetween={30}
           effect={"fade"}
-          navigation={false}
           pagination={{
             clickable: true,
           }}
@@ -36,7 +35,7 @@ const Banner = (props) => {
             delay: 1000,
             disableOnInteraction: false,
           }}
-          modules={[EffectFade, Navigation]}
+          modules={[EffectFade, Pagination]}
           onSwiper={(swiper) => {
             setSwiper(swiper);
           }}
@@ -48,14 +47,14 @@ const Banner = (props) => {
                 <source
                   media="(max-width: 600px)"
                   srcSet={`${import.meta.env.VITE_REACT_APP_STRAPI_URL}${
-                    path.image.formats.large.url
+                    path.image.url
                   }`}
                   alt={path.image.alt}
                 />
                 <source
                   media="(max-width: 820px)"
                   srcSet={`${import.meta.env.VITE_REACT_APP_STRAPI_URL}${
-                    path.image.formats.medium.url
+                    path.image.url
                   }`}
                   alt={path.image.alt}
                 />
@@ -68,12 +67,7 @@ const Banner = (props) => {
               </picture>
             </SwiperSlide>
           ))}
-          <div className="arrowsContainer">
-            <div className="arrows">
-              <IoIosArrowDropleft onClick={handlePrevious} size={30} />
-              <IoIosArrowDropright onClick={handleNext} size={30} />
-            </div>
-          </div>
+         
         </Swiper>
       </ContainerBanner>
     </>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContentGrid = styled.div`
-  background-color: ${(props) => props.theme.colors.JadeGreen};
+  background-color: #E20613;
   display: grid;
   align-content: center;
   grid-template-columns: repeat(9, 1fr);

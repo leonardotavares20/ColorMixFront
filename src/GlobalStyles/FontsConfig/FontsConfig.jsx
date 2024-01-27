@@ -41,7 +41,7 @@ const FontGlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #fff1f1eb;
+    background-color: #ffffff;
     font-size: 14px;
     font-family: 'Roboto';   
     position: relative; 

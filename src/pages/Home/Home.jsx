@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import ContentMainHome from "../../components/Products/ContentMainHome/ContentMainHome";
+import MainCategories from "../../components/Categories/MainCategories/MainCategories";
 import Banner from "../../components/Banner/Banner";
 import OtherCategories from "../../components/Categories/OtherCategories/OtherCategoriesBlock";
 import IndustrialLine from "../../components/Categories/IndustrialLine/IndustrialLine";
@@ -22,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchBanners(
-      `${import.meta.env.VITE_REACT_APP_STRAPI_URL}/banners`,
+      `${import.meta.env.VITE_REACT_APP_STRAPI_URL}/banner-testes`,
       getBanners
     );
   }, [fetchBanners]);
@@ -30,7 +31,8 @@ const Home = () => {
   return (
     <>
       {showPopup && <SucessPopUp />}
-      {/* <Banner images={imagesBanners} isLoading={isLoading} /> */}
+      <Banner images={imagesBanners} isLoading={isLoading} />
+      <MainCategories />
       {/* <ContentMainHome /> */}
       {/* <OtherCategories /> */}
       {/* <IndustrialLine /> */}

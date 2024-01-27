@@ -19,7 +19,7 @@ const AppRoutes = () => {
     <>
       <NavBar />
       {/* {isNotMainCategoriesPage && <MainCategories />} */}
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<PageCart />} />
         <Route path="/product/:id" element={<ProductDetail />} />
@@ -27,7 +27,7 @@ const AppRoutes = () => {
         <Route path="/main-category/:id" element={<MainCategoriesPage />} />
         <Route path="/search/:searchTerm" element={<SearchProdutPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
-      </Routes> */}
+      </Routes>
       {/* <Footer /> */}
     </>
   );
