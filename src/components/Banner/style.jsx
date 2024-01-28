@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerBanner = styled.section`
-  max-height: 500px;
 
   img {
     width: 100%;

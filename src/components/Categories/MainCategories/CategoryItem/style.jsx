@@ -9,22 +9,19 @@ export const CategoryItemDiv = styled.div`
   cursor: pointer;
   color: white;
   text-align: center;
-
-  @media screen and (max-width: 1024px) {
-    padding: 20px 0px;
-  }
+  font-size: 1.1rem;
 
   img {
-    height: 40px;
+    height: 45px;
   }
 
   &:hover {
-    color: ${(props) => props.theme.colors.GoldenYellow};
+    color: #243982;
 
     img {
       filter: invert(1);
-      filter: brightness(0) saturate(100%) invert(77%) sepia(96%)
-        saturate(1472%) hue-rotate(349deg) brightness(104%) contrast(104%);
+      filter: brightness(0) saturate(100%) invert(15%) sepia(65%)
+        saturate(3099%) hue-rotate(221deg) brightness(79%) contrast(83%);
     }
   }
 `;
