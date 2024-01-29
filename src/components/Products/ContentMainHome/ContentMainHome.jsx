@@ -56,7 +56,6 @@ const ContentMainHome = () => {
 
   return (
     <>
-      <Carrousel title={"Produtos em destaque"} items={response} />
       <Grid items={response} />
       <CentralButton>
         {maxItems && <p>Maximo de items em destaque!</p>}

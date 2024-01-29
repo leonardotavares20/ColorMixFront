@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerBanner = styled.section`
-
   img {
     width: 100%;
     display: flex;

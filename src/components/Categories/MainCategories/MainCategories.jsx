@@ -8,10 +8,15 @@ import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { useLocation } from "react-router-dom";
 
 const MainCategories = ({ id }) => {
   const [categories, setCategories] = useState([]);
   const [swiper, setSwiper] = useState();
+
+  const location = useLocation();
+
+  const inHome = location.pathname === "/";
 
   const handlePrevious = () => {
     swiper.slidePrev();
@@ -30,6 +35,16 @@ const MainCategories = ({ id }) => {
   };
 
   useEffect(() => {
+    if (idToNum !== null && categories.length > 0 && swiper) {
+      const categoryIndex = categories.findIndex(
+        (category) => category.id === idToNum
+      );
+
+      swiper.slideTo(categoryIndex);
+    }
+  }, [idToNum, categories, swiper]);
+
+  useEffect(() => {
     fetchCategories(
       `${import.meta.env.VITE_REACT_APP_STRAPI_URL}/main-categories`,
       getCategories
@@ -38,7 +53,7 @@ const MainCategories = ({ id }) => {
 
   return (
     <>
-      <MainContentGrid>
+      <MainContentGrid inHome={inHome}>
         <div className="container">
           <Swiper
             slidesPerView={4}
@@ -70,13 +85,13 @@ const MainCategories = ({ id }) => {
             }}
           >
             {categories.map((category) => (
-              <SwiperSlide>
+              <SwiperSlide key={category.id}>
                 <Link
                   activeclassname="selected"
-                  key={category.id}
                   to={`/main-category/${category.id}`}
                 >
                   <CategoryItem
+                    inHome={inHome}
                     name={category.name}
                     isLoading={isLoading}
                     image={category.image.url}

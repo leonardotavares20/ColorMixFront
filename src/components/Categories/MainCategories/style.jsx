@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContentGrid = styled.div`
-  background-color: #e20613;
+  background-color: ${(props) => (props.inHome ? "#E20613" : "white")};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,6 @@ export const MainContentGrid = styled.div`
   padding: 0px 30px;
   gap: 0px 10px;
   min-height: 205px;
-  color: white;
   height: 100%;
 
   .container {
@@ -30,18 +29,19 @@ export const MainContentGrid = styled.div`
       }
 
       svg {
+        fill: ${(props) => (props.inHome ? "white" : "#243982")};
         cursor: pointer;
       }
     }
   }
 
   .selected {
-    color: #243982;
+    color: #E20613;
 
+    
     img {
       filter: invert(1);
-      filter: brightness(0) saturate(100%) invert(15%) sepia(65%)
-        saturate(3099%) hue-rotate(221deg) brightness(79%) contrast(83%);
+      filter: brightness(0) saturate(100%) invert(11%) sepia(98%) saturate(7421%) hue-rotate(355deg) brightness(98%) contrast(109%);
     }
   }
 `;

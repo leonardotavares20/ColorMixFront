@@ -11,19 +11,18 @@ export const ButtonBlue = styled.button`
 `;
 
 export const ButtonGray = styled.button`
-  background-color: ${(props) => props.theme.colors.Gray};
+  background-color: #243982;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0px 0px 0px 20px;
   width: 50%;
-  padding: 0px 5px;
   color: white;
   height: 40px;
   transition: 0.5s;
   width: 110px;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.JadeGreen};
+    background-color: #4362d2;
     transition: 0.5s;
   }
 `;
@@ -32,16 +31,16 @@ export const ButtonTransparent = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0px 0px 0px 20px;
   width: 50%;
   padding: 0px 5px;
-  color: black;
+  color: #243982;
   width: 110px;
   height: 40px;
   transition: 0.5s;
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid #243982;
     transition: 0.5s;
   }
 `;

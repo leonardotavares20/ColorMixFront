@@ -71,7 +71,6 @@ export const ContainerTitle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 
   img {
     margin-bottom: 50px;
@@ -80,9 +79,24 @@ export const ContainerTitle = styled.div`
 `;
 
 export const Title = styled.div`
-  width: 80vw;
+  width: 85vw;
   margin-bottom: 50px;
-  transform: translateY(50px);
-  color: ${(props) => props.theme.colors.Jewel};
+  color: white;
   text-align: center;
+
+  .bar {
+    height: 20px;
+    background-color: #243982;
+    border-radius: 0px 0px 20px 0px;
+  }
+
+  .title {
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 50px;
+    background-color: #243982;
+  }
 `;

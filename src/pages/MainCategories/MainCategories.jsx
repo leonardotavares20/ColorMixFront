@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Pagination from "../../components/Pagination/Pagination";
 import MainCategories from "../../components/Categories/MainCategories/MainCategories";
+import ContentMainHome from "../../components/Products/ContentMainHome/ContentMainHome";
 import { useParams } from "react-router-dom";
 import useHttp from "../../hooks/useHttp";
 
@@ -34,6 +35,7 @@ const MainCategoriesPage = () => {
         name={nameCategorie}
         itemsPerPage={4}
       />
+      {/* <ContentMainHome /> */}
     </>
   );
 };

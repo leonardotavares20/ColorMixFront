@@ -12,13 +12,13 @@ import MainCategoriesPage from "../pages/MainCategories/MainCategories";
 
 const AppRoutes = () => {
   const location = useLocation();
-  const isNotMainCategoriesPage =
-    !location.pathname.startsWith("/main-category/");
+  const isNotMainCategoriesPage = !location.pathname.startsWith("/");
+
 
   return (
     <>
       <NavBar />
-      {/* {isNotMainCategoriesPage && <MainCategories />} */}
+      {isNotMainCategoriesPage && <MainCategories />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<PageCart />} />

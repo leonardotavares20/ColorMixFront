@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   display: grid;
   position: relative;
   z-index: 10;
+  background-color: white;
   grid-template-columns: 1fr 0.7fr 1fr 0.8fr;
   grid-template-areas: "logo links search cart";
   box-shadow: 0px 10px 10px 0px #11111115;

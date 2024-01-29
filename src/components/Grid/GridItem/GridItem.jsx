@@ -31,7 +31,7 @@ const GridItem = (props) => {
     () => {
       gsap.registerPlugin(ScrollTrigger);
 
-      const animation = gsap.from(".item", {
+      const animation = gsap.from(".container", {
         duration: 0.3,
         scale: 1,
         opacity: 0,
@@ -44,7 +44,6 @@ const GridItem = (props) => {
       ScrollTrigger.create({
         trigger: box.current,
         animation: animation,
-        start: "start center",
       });
     },
 
@@ -56,14 +55,15 @@ const GridItem = (props) => {
   return (
     <>
       <DivItem ref={box}>
-        <div className="item">
-          <img src={image} alt={alt} />
-          <p className="name">{name}</p>
-          <p className="price">{priceFormatter}</p>
-          <ButtonGray onClick={sendToCartHandler}>Adicionar Item</ButtonGray>
+        <div className="container">
           <Link to={`/product/${id}`}>
-            <ButtonTransparent>Saiba Mais</ButtonTransparent>
+            <div className="itemDescription">
+              <img src={image} alt={alt} />
+              <p className="name">{name}</p>
+              <p className="price">{priceFormatter}</p>
+            </div>
           </Link>
+          <ButtonGray onClick={sendToCartHandler}>Adicionar Item</ButtonGray>
         </div>
       </DivItem>
     </>

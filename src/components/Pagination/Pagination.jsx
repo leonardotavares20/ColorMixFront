@@ -25,12 +25,11 @@ export function Pagination({ products, name, itemsPerPage }) {
   return (
     <>
       <ContainerTitle>
-        <img
-          src={BannerPageCategories}
-          alt="Imagem com a legenda: Aproveite parcelamos em ate 6 vezes"
-        />
         <Title>
-          <h1>{name}</h1>
+          <div className="bar"></div>
+          <div className="title">
+            <h1>{name}</h1>
+          </div>
         </Title>
       </ContainerTitle>
       <Grid items={currentItems} />
