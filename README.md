@@ -1,8 +1,8 @@
 ## Descriçao do Projeto
 
-<!-- <h1>Santa Rita Home Center</h1>
+<!-- <h1>ColorMix</h1>
 
-<h2>É uma plataforma online para explorar os produtos da loja Santa Rita. Aqui estão algumas informações úteis para começar:</h2> 
+<h2>É uma plataforma online para explorar os produtos da loja ColorMix. Aqui estão algumas informações úteis para começar:</h2> 
 
 ![Alt Text](./public/home.png)
 
